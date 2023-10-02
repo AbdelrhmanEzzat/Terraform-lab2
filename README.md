@@ -56,7 +56,8 @@
 10. Create a Lambda function to send an email. 📧
     - Write a Lambda function that uses the SES service to send an email.
 
-        #importing    
+        ```
+
         import boto3
         import json
 
@@ -90,6 +91,8 @@
             )
 
             return {'statusCode': 200, 'body': json.dumps(response)}
+            
+            ```
 
 11. Create a trigger to detect changes in the state file and send the email. 📈
     - Configure a trigger that detects changes
