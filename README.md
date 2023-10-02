@@ -42,10 +42,10 @@
     - Follow the instructions to create a Jenkins image with Terraform installed.
     - create dockerfile 🐳 
     - Build and run container 
-
+    ```
     docker build -t jenkins-with-terraform .
     docker run -p 8081:8080 -p 50000:50000 jenkins-with-terraform
-
+    ```
 8. Create a pipeline that takes an env-param to apply the Terraform code on a certain environment. 🚦
     - Configure a Jenkins pipeline that accepts an environment parameter and runs the Terraform apply command with the corresponding variable file.
     - I create two pipeline one for **Apply** and anothor to **Destroy** 
@@ -91,7 +91,7 @@
             )
 
             return {'statusCode': 200, 'body': json.dumps(response)}
-            
+
             ```
 
 11. Create a trigger to detect changes in the state file and send the email. 📈
