@@ -56,7 +56,7 @@
 10. Create a Lambda function to send an email. 📧
     - Write a Lambda function that uses the SES service to send an email.
            
-            import boto3
+        import boto3
         import json
 
         def lambda_handler(event, context):
