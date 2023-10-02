@@ -91,5 +91,12 @@
             return {'statusCode': 200, 'body': json.dumps(response)}
 
 11. Create a trigger to detect changes in the state file and send the email. 📈
-    - Configure a trigger that detects changes in the Terraform state file and triggers the Lambda function to send an email.
+    - Configure a trigger that detects changes
+
+https://github.com/AbdelrhmanEzzat/Terraform-lab2/assets/64223277/fb948302-dc19-41f1-9e1e-3682743e8ab4
+
+ in the Terraform state file and triggers the Lambda function to send an email.
+
+
+#Video for display all cycle 
 
